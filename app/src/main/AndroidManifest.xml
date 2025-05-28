@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo_small"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo_small"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TriviYAAAS"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.QuizActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard.bottomnav.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard.ResultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard.CategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.dashboard.HomeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.registration.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.registration.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
